@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  color: hsl(229, 23%, 23%);
+
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 35vw bottom 40vh, left 40vw top 40vh; /*right 50vw bottom 50vh, left 50vw top 50vh;*/
+}
+
+@media only screen and (min-width:1440px) {
+    body {
+        background-position: right 45vw bottom 45vh, left 45vw top 45vh;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.container {
+    width: 98%;
+    margin: 0 auto;
+}
+  
+@media only screen and (min-width:480px) {
+    .container {
+      width: 95%;
+    }
+}
+  
+@media only screen and (min-width:768px) {
+    .container {
+        width: 90%;
+    }
+}
+  
+@media only screen and (min-width:992px) {
+    .container {
+        width: 90%;
+        max-width: 1100px;
+    }
+}
+
+.card {
+    margin: 0 auto;
+    background: white;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.card .card-header {
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 75px;
+    position: relative;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card img {
+    border-radius: 50%;
+    border: solid 5px white;
+    position: absolute;
+    top: 57%;
+    left: 34%;
+}
+
+.card-name {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.card-name_city {
+    font-weight: 400;
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+}
+
+.card-info {
+    display: flex;
+    padding: 25px 15px 20px 15px;
+    margin-top: 20px;
+    font-weight: 700;
+    border-top: solid thin hsl(0, 0%, 59%);
+}
+
+.card-info span {
+    font-size: 10px;
+    display: inline-block;
+    margin: 5px 10px 0 10px;
+    letter-spacing: 1.5px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
